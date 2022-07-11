@@ -18,7 +18,7 @@ RUN apt -yqq install python3-pip && \
     apt -yqq install libffi-dev && \
     apt -yqq install libssl-dev && \
     apt -yqq install tesseract-ocr && \
-    apt -yqq install tesseract-ocr-all && \
+    apt-get -y install tesseract-ocr-kor && \
     apt -yqq install ghostscript && \
     apt -yqq install imagemagick
     

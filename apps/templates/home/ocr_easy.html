@@ -40,12 +40,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">ocr</h1>
+            <h1 class="m-0 text-dark">EasyOCR</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">ocr v1</li>
+              <li class="breadcrumb-item active">ocr v2</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -58,8 +58,14 @@
       <div class="container-fluid">
         <!-- Small boxes (Stat box) -->
         <div class="row">
-          <h1>OCR 일로와....</h1>
-
+          <div class="upload-form">
+            <form action = "/easy_uploader" method = "POST" 
+              enctype = "multipart/form-data">
+              <input type = "file" name = "file" />
+              <input type = "submit"/>
+            </form>
+            <p>jpg 파일이 가능합니다.</p>
+          </div>
           <!-- ./col -->
         </div>
         <!-- /.row -->
