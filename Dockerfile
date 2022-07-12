@@ -14,14 +14,19 @@ RUN apt -yqq install software-properties-common
 
 RUN add-apt-repository ppa:alex-p/tesseract-ocr-devel -y
 
-RUN apt -yqq install python3-pip && \
+RUN apt -yqq install build-essential && \
     apt -yqq install libffi-dev && \
     apt -yqq install libssl-dev && \
+    apt -yqq install python3-dev && \
+    apt -yqq install python3-pip && \
+    apt -yqq install mysql-server && \
+    apt -yqq install default-libmysqlclient-dev && \
     apt -yqq install tesseract-ocr && \
-    apt-get -y install tesseract-ocr-kor && \
+    apt -yqq install tesseract-ocr-kor && \
+    apt -yqq install tesseract-ocr-jpn && \
     apt -yqq install ghostscript && \
     apt -yqq install imagemagick
-    
+    # Sudo apt-get install build-essential libssl-dev libffi-dev python3-dev
 
 RUN  pip3 install --upgrade pip --no-cache-dir && \
      pip3 install --upgrade setuptools --no-cache-dir && \
