@@ -2,7 +2,7 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="/" class="brand-link">
-      <img src="/static/assets/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <img src="/static/assets/img/logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">CoCoA</span>
     </a>
 
@@ -41,7 +41,7 @@
             <a href="#" class="nav-link {% if 'ocr' in segment %} active {% endif %}">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                관세 문서 인식
+                OCR 센터
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -59,7 +59,19 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/index3.html" class="nav-link {% if 'index3.html' in segment %} active {% endif %}">
+                <a href="/ocr_import0.html" class="nav-link {% if 'ocr_import0.html' in segment %} active {% endif %}">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>수입신고필증</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/ocr_export0.html" class="nav-link {% if 'ocr_export0.html' in segment %} active {% endif %}">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>수출신고필증</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/ocr_biz_registration.html" class="nav-link {% if 'ocr_biz_registration.html' in segment %} active {% endif %}">
                   <i class="far fa-circle nav-icon"></i>
                   <p>사업자등록증</p>
                 </a>

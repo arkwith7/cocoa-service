@@ -55,7 +55,7 @@ def convert_to_tiff(image_file):
 @login_required
 def index():
 
-    return render_template('home/index.html', segment='index')
+    return render_template('home/index4.html', segment='index')
 
 @blueprint.route('/ocr_tesseract')
 @login_required
